@@ -47,7 +47,7 @@ SQLINTEGER Database::DisplayError(SQLSMALLINT t, SQLHSTMT h)
 bool Database::SQL_Connect()
 {
 	SQLSMALLINT CONN_STR_OUT_MAX = 255;
-	std::wstring tempConnString = L"Driver={SQL Server}; Server=.\\SQLExpress; AttachDbFilename=" + std::filesystem::current_path().wstring() + L"\\GameDB.mdf; Database=GameDB; Trusted_Connection=Yes;";
+	std::wstring tempConnString = L"Driver={SQL Server}; Server=.\\SQLExpress; AttachDbFilename=" + std::filesystem::current_path().wstring() + L"\\Database\\GameDB.mdf; Database=GameDB; Trusted_Connection=Yes;";
 	wchar_t* connString = const_cast<wchar_t*>(tempConnString.c_str());
 
 	rc = SQLAllocEnv(&hEnv); /* Allocate an environment handle */

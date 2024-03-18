@@ -366,3 +366,4 @@ FodyWeavers.xsd
 KeyboardGame/x64/
 KeyboardGame/SFML/
 KeyboardGame/TGUI/
+KeyboardGame/Database/
