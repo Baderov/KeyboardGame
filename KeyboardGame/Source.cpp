@@ -25,7 +25,7 @@ void setVariable(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindow>&
 	gv->setPassword(L"");
 	gv->setGameMode(GameMode::Free);
 
-	gv->setGameLanguage(GameLanguage::Russian);
+	gv->setGameLanguage(GameLanguage::English);
 
 	fillDictionaryVec(gv, gw);
 
