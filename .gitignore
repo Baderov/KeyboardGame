@@ -363,7 +363,11 @@ MigrationBackup/
 FodyWeavers.xsd
 
 
-KeyboardGame/x64/
+KeyboardGame/Database/
+KeyboardGame/Documents/
+KeyboardGame/Fonts/
+KeyboardGame/Images/
 KeyboardGame/SFML/
 KeyboardGame/TGUI/
-KeyboardGame/Database/
+KeyboardGame/x64/
+KeyboardGame/*vcxproj*
