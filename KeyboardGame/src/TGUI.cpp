@@ -574,15 +574,15 @@ void authPageUpdate(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindo
 
 void graphicsSettingsUpdate(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindow>& gw)
 {
+	float winSizeX = static_cast<float>(gw->window.getSize().x);
+	float winSizeY = static_cast<float>(gw->window.getSize().y);
+	gw->pageGUI.removeAllWidgets();
+
 	tempGameLanguage = gv->getGameLanguage();
 	tempWindowSize = gw->getSize();
 	tempFPSLimiter = gw->getFPSLimiter();
 	tempIsFullscreen = gw->getIsFullscreen();
 	tempIsVsync = gw->getIsVsync();
-
-	float winSizeX = static_cast<float>(gw->window.getSize().x);
-	float winSizeY = static_cast<float>(gw->window.getSize().y);
-	gw->pageGUI.removeAllWidgets();
 
 	tgui::Button::Ptr applyButton = tgui::Button::create();
 	applyButton->getRenderer()->setBackgroundColorHover(tgui::Color::Yellow);

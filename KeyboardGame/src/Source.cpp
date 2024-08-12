@@ -27,7 +27,7 @@ void setVariable(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindow>&
 
 	gv->setGameLanguage(GameLanguage::English);
 
-	fillDictionaryVec(gv, gw);
+	fillDictionaryVec(gv);
 
 	createVirtualKeyboard(gv, gw);
 

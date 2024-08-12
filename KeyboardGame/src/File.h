@@ -28,6 +28,6 @@ void clearFile(std::wstring filePath);
 
 void shuffleDictionaryVec(std::unique_ptr<GameVariable>& gv);
 
-void fillDictionaryVec(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindow>& gw);
+void fillDictionaryVec(std::unique_ptr<GameVariable>& gv);
 
 #endif

@@ -46,7 +46,7 @@ void shuffleDictionaryVec(std::unique_ptr<GameVariable>& gv)
 	std::shuffle(gv->dictionaryVector.begin(), gv->dictionaryVector.end(), g);
 }
 
-void fillDictionaryVec(std::unique_ptr<GameVariable>& gv, std::unique_ptr<GameWindow>& gw)
+void fillDictionaryVec(std::unique_ptr<GameVariable>& gv)
 {
 	gv->dictionaryVector.clear();
 
